@@ -35,7 +35,7 @@ export default function Navbar() {
 
                     <a href="/services">Services</a>
 
-                    <a href="/philosophy">Philosophy</a>
+                    {/* <a href="/philosophy">Philosophy</a> */}
 
                
 

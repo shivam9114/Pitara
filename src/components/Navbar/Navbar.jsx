@@ -29,15 +29,17 @@ export default function Navbar() {
 
                 <nav>
 
-                    <a href="#">Retreats</a>
+                     <a href="/">Home</a>
 
-                    <a href="#">Teacher Training</a>
+                    <a href="/about">About Us</a>
 
-                    <a href="#">Philosophy</a>
+                    <a href="/services">Services</a>
 
-                    <a href="#">Journal</a>
+                    <a href="/philosophy">Philosophy</a>
 
-                    <a href="#">Contact</a>
+               
+
+                    <a href="/contact">Contact</a>
 
                 </nav>
 

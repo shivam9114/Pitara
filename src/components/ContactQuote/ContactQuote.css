@@ -1,0 +1,238 @@
+.contactQuote {
+  position: relative;
+
+  width: 100%;
+  min-height: 280px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #eee8de;
+
+  color: #1b1b19;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.contactQuoteContent {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 55px 8.5vw;
+}
+
+
+.contactQuoteMark {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #ad6245;
+
+  font-family: Georgia, serif;
+
+  font-size: 48px;
+
+  line-height: 0.6;
+}
+
+
+.contactQuote h2 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(38px, 3vw, 52px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -1px;
+}
+
+
+/* =========================================
+   BOTANICAL DECORATION
+========================================= */
+
+.contactQuoteArtwork {
+  position: absolute;
+
+  right: 7%;
+
+  bottom: -15px;
+
+  width: 300px;
+
+  height: 250px;
+
+  opacity: 0.35;
+}
+
+
+/* Main stem */
+
+.contactQuoteArtwork::before {
+  content: "";
+
+  position: absolute;
+
+  left: 48%;
+
+  bottom: -20px;
+
+  width: 1px;
+
+  height: 245px;
+
+  background: #9e9a91;
+
+  transform: rotate(-22deg);
+
+  transform-origin: bottom;
+}
+
+
+/* Branch */
+
+.contactQuoteArtwork::after {
+  content: "";
+
+  position: absolute;
+
+  left: 46%;
+
+  bottom: 105px;
+
+  width: 125px;
+
+  height: 1px;
+
+  background: #9e9a91;
+
+  transform: rotate(-27deg);
+}
+
+
+/* Leaves */
+
+.contactQuoteArtwork span {
+  position: absolute;
+
+  width: 48px;
+
+  height: 23px;
+
+  border: 1px solid #9e9a91;
+
+  border-radius: 100% 0 100% 0;
+
+  transform: rotate(-35deg);
+}
+
+
+/* Leaf 1 */
+
+.contactQuoteArtwork span:nth-child(1) {
+  left: 34px;
+  bottom: 138px;
+
+  transform: rotate(-35deg);
+}
+
+
+/* Leaf 2 */
+
+.contactQuoteArtwork span:nth-child(2) {
+  left: 83px;
+  bottom: 168px;
+
+  transform: rotate(20deg);
+}
+
+
+/* Leaf 3 */
+
+.contactQuoteArtwork span:nth-child(3) {
+  left: 115px;
+  bottom: 205px;
+
+  transform: rotate(-30deg);
+}
+
+
+/* Leaf 4 */
+
+.contactQuoteArtwork span:nth-child(4) {
+  left: 164px;
+  bottom: 185px;
+
+  transform: rotate(20deg);
+}
+
+
+/* Leaf 5 */
+
+.contactQuoteArtwork span:nth-child(5) {
+  left: 188px;
+  bottom: 225px;
+
+  transform: rotate(-25deg);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .contactQuote {
+    min-height: 330px;
+  }
+
+  .contactQuoteContent {
+    padding: 60px 24px;
+  }
+
+  .contactQuoteMark {
+    font-size: 42px;
+  }
+
+  .contactQuote h2 {
+    font-size: 38px;
+
+    line-height: 1.05;
+  }
+
+  .contactQuote h2 br {
+    display: none;
+  }
+
+  .contactQuoteArtwork {
+    right: -80px;
+
+    transform: scale(0.75);
+
+    transform-origin: bottom right;
+
+    opacity: 0.25;
+  }
+
+}

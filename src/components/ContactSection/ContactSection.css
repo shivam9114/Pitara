@@ -1,0 +1,239 @@
+.contactSection{
+
+    background:#f7f3ec;
+
+    padding:140px 0;
+
+}
+
+.contactGrid{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:100px;
+
+}
+
+.sectionTag{
+
+    color:#b36b4d;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+}
+
+.contactLeft h2{
+
+    margin:25px 0;
+
+    font-size:90px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:400;
+
+    line-height:.95;
+
+}
+
+.contactLeft em{
+
+    color:#b36b4d;
+
+    font-style:italic;
+
+}
+
+.contactLeft p{
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.divider{
+
+    margin:55px 0;
+
+    border-top:1px solid #ddd;
+
+}
+
+.contactInfo{
+
+    margin-bottom:40px;
+
+}
+
+.contactInfo small{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#999;
+
+}
+
+.contactInfo h3{
+
+    font-size:38px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:400;
+
+}
+
+.contactForm{
+
+    width:100%;
+
+}
+
+.inputGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.field{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.field label{
+
+    margin-bottom:12px;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#777;
+
+}
+
+.field input,
+.field select,
+.field textarea{
+
+    border:none;
+
+    border-bottom:1px solid #ccc;
+
+    background:none;
+
+    padding:15px 0;
+
+    font-size:18px;
+
+    outline:none;
+
+    resize:none;
+
+}
+
+.textarea{
+
+    margin-top:50px;
+
+}
+
+.formBottom{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.formBottom p{
+
+    max-width:450px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.formBottom button{
+
+    border:none;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:18px 45px;
+
+    border-radius:60px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+@media(max-width:991px){
+
+    .contactGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .inputGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contactLeft h2{
+
+        font-size:58px;
+
+    }
+
+    .formBottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}

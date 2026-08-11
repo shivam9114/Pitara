@@ -1,0 +1,242 @@
+.retreats{
+
+    background:#f7f3ec;
+    padding:120px 0;
+
+}
+
+.retreatContainer{
+
+    max-width:1450px;
+    margin:auto;
+    padding:0 50px;
+
+}
+
+.retreatHeader{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:90px;
+    gap:120px;
+
+}
+
+.retreatHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:92px;
+    line-height:.95;
+    font-weight:400;
+
+}
+
+.retreatHeader em{
+
+    color:#b25b3d;
+    font-style:italic;
+
+}
+
+.retreatHeader p{
+
+    width:350px;
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+.retreatGrid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:90px 60px;
+    align-items:start;
+
+}
+
+.retreatCard.large{
+
+    margin-top:-40px;
+
+}
+
+.retreatCard:nth-child(2){
+
+    margin-top:70px;
+
+}
+
+.retreatCard:nth-child(3){
+
+    margin-top:-50px;
+
+}
+
+.imageBox{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.imageBox img{
+
+    width:100%;
+    display:block;
+    transition:.7s;
+
+}
+
+.retreatCard:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.badge{
+
+    position:absolute;
+    left:18px;
+    top:18px;
+
+    width:34px;
+    height:22px;
+
+    background:rgba(0,0,0,.45);
+
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:11px;
+    letter-spacing:2px;
+
+}
+
+.cardInfo{
+
+    margin-top:26px;
+
+}
+
+.cardInfo small{
+
+    display:block;
+
+    color:#b25b3d;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+}
+
+.titleRow{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+
+}
+
+.titleRow h3{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:56px;
+    font-weight:400;
+
+}
+
+.price{
+
+    text-align:right;
+
+}
+
+.price span{
+
+    display:block;
+
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+}
+
+.price strong{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:34px;
+    font-weight:400;
+
+}
+
+.cardInfo p{
+
+    margin:18px 0 25px;
+    max-width:520px;
+    line-height:1.8;
+
+}
+
+.cardInfo a{
+
+    text-decoration:none;
+    color:#111;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:13px;
+
+}
+
+@media(max-width:992px){
+
+    .retreatGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .retreatCard,
+    .retreatCard.large,
+    .retreatCard:nth-child(2),
+    .retreatCard:nth-child(3){
+
+        margin-top:0;
+
+    }
+
+    .retreatHeader{
+
+        flex-direction:column;
+        gap:30px;
+
+    }
+
+    .retreatHeader h2{
+
+        font-size:58px;
+
+    }
+
+    .titleRow{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+    }
+
+    .price{
+
+        text-align:left;
+
+    }
+
+}

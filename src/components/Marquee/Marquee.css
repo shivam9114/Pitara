@@ -1,0 +1,92 @@
+.marqueeSection {
+
+    width:100%;
+    overflow:hidden;
+    background:#f7f3ec;
+    border-top:1px solid rgba(0,0,0,.08);
+    border-bottom:1px solid rgba(0,0,0,.08);
+    padding:45px 0;
+
+}
+
+.marqueeTrack{
+
+    display:flex;
+    width:max-content;
+    animation:marquee 40s linear infinite;
+
+}
+
+.marqueeTrack:hover{
+
+    animation-play-state:paused;
+
+}
+
+.marqueeItem{
+
+    display:flex;
+    align-items:center;
+    margin-right:120px;
+    flex-shrink:0;
+
+}
+
+.marqueeItem h2{
+
+    font-family:"Cormorant Garamond", serif;
+    font-size:86px;
+    font-weight:400;
+    color:#a65133;
+    white-space:nowrap;
+
+}
+
+.star{
+
+    margin-left:70px;
+    flex-shrink:0;
+
+}
+
+@keyframes marquee{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .marqueeSection{
+
+        padding:28px 0;
+
+    }
+
+    .marqueeItem{
+
+        margin-right:70px;
+
+    }
+
+    .marqueeItem h2{
+
+        font-size:46px;
+
+    }
+
+    .star{
+
+        width:34px;
+        height:34px;
+        margin-left:40px;
+
+    }
+
+}

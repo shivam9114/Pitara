@@ -1,0 +1,174 @@
+.contactHero {
+  position: relative;
+
+  width: 100%;
+  min-height: 620px;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  color: #f7f3ec;
+}
+
+
+/* Dark cinematic overlay */
+
+.contactHeroOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.42) 38%,
+      rgba(0, 0, 0, 0.12) 75%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+}
+
+
+/* Content */
+
+.contactHeroContent {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1400px;
+
+  min-height: 620px;
+
+  margin: 0 auto;
+
+  padding: 0 8.5vw;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+/* Small heading */
+
+.contactHeroEyebrow {
+  margin-bottom: 24px;
+
+  color: #d08766;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* Main heading */
+
+.contactHero h1 {
+  margin: 0 0 24px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(70px, 7vw, 115px);
+
+  font-weight: 400;
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  color: #f5f1e9;
+}
+
+
+/* Description */
+
+.contactHero p {
+  margin: 0;
+
+  max-width: 510px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .contactHero,
+  .contactHeroContent {
+    min-height: 550px;
+  }
+
+  .contactHeroContent {
+    padding: 0 50px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contactHero {
+    min-height: 600px;
+
+    background-position: 62% center;
+  }
+
+  .contactHeroContent {
+    min-height: 600px;
+
+    padding: 0 24px;
+
+    justify-content: center;
+  }
+
+  .contactHeroEyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .contactHero h1 {
+    font-size: 64px;
+
+    letter-spacing: -2px;
+  }
+
+  .contactHero p {
+    font-size: 14px;
+
+    max-width: 330px;
+  }
+
+  .desktopBreak {
+    display: none;
+  }
+
+}

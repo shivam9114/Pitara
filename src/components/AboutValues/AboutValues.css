@@ -1,0 +1,545 @@
+.aboutValues {
+  width: 100%;
+  background: #f7f3ec;
+  color: #181817;
+}
+
+
+/* =====================================================
+   COMMON
+===================================================== */
+
+.aboutValuesLabel {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #ad6245;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   VALUES
+===================================================== */
+
+.valuesSection {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr;
+
+  gap: 70px;
+
+  padding: 65px 11.5vw;
+
+  border-top: 1px solid #dedbd4;
+  border-bottom: 1px solid #dedbd4;
+}
+
+
+.valuesIntro h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(38px, 3vw, 52px);
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: -1.5px;
+}
+
+
+.valuesIntro h2 em {
+  color: #ad6245;
+
+  font-style: italic;
+}
+
+
+.valuesGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 40px;
+}
+
+
+.valueItem {
+  min-width: 0;
+}
+
+
+.valueIcon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  margin-bottom: 15px;
+
+  color: #333;
+
+  font-family: Georgia, serif;
+
+  font-size: 28px;
+}
+
+
+.valueItem h3 {
+  margin: 0 0 13px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.valueItem p {
+  margin: 0;
+
+  color: #66635e;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   FOUNDERS
+===================================================== */
+
+.founderSection {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 430px;
+
+  border-bottom: 1px solid #dedbd4;
+}
+
+
+.founderImage {
+  overflow: hidden;
+}
+
+
+.founderImage img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+
+.founderImage:hover img {
+  transform: scale(1.025);
+}
+
+
+.founderContent {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 70px 10vw 70px 55px;
+}
+
+
+.founderQuoteMark {
+  margin-bottom: 5px;
+
+  color: #ad6245;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  line-height: 0.7;
+}
+
+
+.founderContent blockquote {
+  margin: 25px 0 30px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(28px, 2.1vw, 40px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.7px;
+}
+
+
+.founders {
+  display: flex;
+
+  gap: 38px;
+
+  align-items: center;
+}
+
+
+.founderPerson {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.founderAvatar {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 43px;
+  height: 43px;
+
+  border-radius: 50%;
+
+  background: #d7b99e;
+
+  color: #292724;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+.founderPerson strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+.founderPerson span {
+  display: block;
+
+  color: #77736d;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   TEAM
+===================================================== */
+
+.teamSection {
+  padding: 65px 10.5vw 70px;
+}
+
+
+.teamHeading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 60px;
+
+  margin-bottom: 42px;
+}
+
+
+.teamHeading h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(38px, 3vw, 50px);
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+.teamHeading > p {
+  margin: 0;
+
+  max-width: 430px;
+
+  color: #64615c;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   TEAM GRID
+===================================================== */
+
+.teamGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 38px;
+}
+
+
+.teamCard {
+  background: #eee9df;
+
+  overflow: hidden;
+}
+
+
+.teamImage {
+  width: 100%;
+
+  aspect-ratio: 1.15 / 1;
+
+  overflow: hidden;
+}
+
+
+.teamImage img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+
+.teamCard:hover .teamImage img {
+  transform: scale(1.04);
+}
+
+
+.teamInfo {
+  padding: 17px 14px 19px;
+}
+
+
+.teamInfo h3 {
+  margin: 0 0 5px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.teamInfo span {
+  color: #77736d;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .valuesSection {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 55px 50px;
+  }
+
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+  }
+
+
+  .founderContent {
+    padding: 55px 50px;
+  }
+
+
+  .teamSection {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .valuesSection {
+    padding: 50px 24px;
+  }
+
+
+  .valuesGrid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 20px;
+  }
+
+
+  .valueItem p {
+    font-size: 11px;
+  }
+
+
+  /* Founder */
+
+  .founderSection {
+    grid-template-columns: 1fr;
+  }
+
+
+  .founderImage {
+    min-height: 330px;
+  }
+
+
+  .founderContent {
+    padding: 50px 24px;
+  }
+
+
+  .founderContent blockquote {
+    font-size: 32px;
+  }
+
+
+  .desktopOnly {
+    display: none;
+  }
+
+
+  .founders {
+    gap: 22px;
+  }
+
+
+  /* Team */
+
+  .teamSection {
+    padding: 50px 24px;
+  }
+
+
+  .teamHeading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+  }
+
+
+  .teamHeading > p {
+    font-size: 11px;
+  }
+
+
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+  }
+
+
+  .teamInfo {
+    padding: 13px 10px 15px;
+  }
+
+
+  .teamInfo h3 {
+    font-size: 9px;
+  }
+
+
+  .teamInfo span {
+    font-size: 9px;
+  }
+
+}

@@ -1,0 +1,459 @@
+.servicesIntro {
+  width: 100%;
+
+  background: #f7f2ea;
+
+  color: #1c1c1a;
+
+  border-bottom: 1px solid #ddd6cc;
+}
+
+
+/* =========================================
+   TOP INTRO
+========================================= */
+
+.servicesIntroTop {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 1fr 0.85fr 0.32fr;
+
+  min-height: 315px;
+
+  border-bottom: 1px solid #ddd6cc;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.servicesIntroText {
+  padding: 45px 45px 40px 12%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.servicesIntroLabel {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 14px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.7px;
+
+  color: #55514b;
+}
+
+
+.servicesIntroLabel span {
+  width: 28px;
+
+  height: 1px;
+
+  background: #b46648;
+}
+
+
+.servicesIntroText h2 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(35px, 3.2vw, 48px);
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+
+.servicesIntroText h2 em {
+  color: #ad6245;
+
+  font-style: italic;
+}
+
+
+.servicesIntroText > p {
+  max-width: 470px;
+
+  margin: 17px 0 18px;
+
+  color: #4e4c48;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   STATEMENT
+========================================= */
+
+.servicesIntroStatement {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  color: #ad6245;
+}
+
+
+.servicesLeaf {
+  font-size: 30px;
+
+  font-family: Georgia, serif;
+
+  transform: rotate(-20deg);
+}
+
+
+.servicesIntroStatement div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.servicesIntroStatement strong {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.servicesIntroImage {
+  overflow: hidden;
+
+  border-left: 1px solid #ddd6cc;
+}
+
+
+.servicesIntroImage img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+
+.servicesIntroImage:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   RIGHT DECORATION
+========================================= */
+
+.servicesIntroDecoration {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  color: #d4c4b1;
+
+  font-family: Georgia, serif;
+
+  font-size: 190px;
+
+  line-height: 1;
+
+  transform: rotate(-25deg);
+
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   SERVICES LIST
+========================================= */
+
+.servicesList {
+  padding: 14px 8% 18px;
+}
+
+
+.servicesListHeading {
+  margin-bottom: 14px;
+
+  text-align: center;
+
+  color: #242320;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.servicesGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  border-top: 1px solid #ddd6cc;
+
+  border-left: 1px solid #ddd6cc;
+}
+
+
+.serviceItem {
+  min-height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 12px 10px;
+
+  text-align: center;
+
+  border-right: 1px solid #ddd6cc;
+
+  border-bottom: 1px solid #ddd6cc;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.serviceItem:hover {
+  background: #f0e8dd;
+
+  transform: translateY(-2px);
+}
+
+
+.serviceIcon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 9px;
+
+  border: 1px solid #d5bda8;
+
+  border-radius: 50%;
+
+  color: #ad6245;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+}
+
+
+.serviceItem h3 {
+  margin: 0;
+
+  color: #272622;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   BOTTOM DESCRIPTION
+========================================= */
+
+.servicesBottomText {
+  max-width: 750px;
+
+  margin: 17px auto 0;
+
+  text-align: center;
+
+  color: #4f4c47;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+
+.servicesBottomOrnament {
+  margin-top: 9px;
+
+  text-align: center;
+
+  color: #bd7b5c;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .servicesIntroTop {
+    grid-template-columns: 1fr 0.85fr;
+  }
+
+  .servicesIntroText {
+    padding-left: 7%;
+  }
+
+  .servicesIntroDecoration {
+    display: none;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .servicesIntroTop {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .servicesIntroText {
+    padding: 45px 24px 35px;
+  }
+
+
+  .servicesIntroText h2 {
+    font-size: 40px;
+  }
+
+
+  .servicesIntroText > p {
+    font-size: 11px;
+  }
+
+
+  .servicesIntroImage {
+    height: 330px;
+
+    border-left: none;
+
+    border-top: 1px solid #ddd6cc;
+  }
+
+
+  .servicesIntroDecoration {
+    display: none;
+  }
+
+
+  .servicesList {
+    padding: 28px 16px;
+  }
+
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .serviceItem {
+    min-height: 130px;
+  }
+
+
+  .servicesBottomText {
+    padding: 0 5px;
+
+    font-size: 10px;
+  }
+
+
+  .desktopOnly {
+    display: none;
+  }
+
+}

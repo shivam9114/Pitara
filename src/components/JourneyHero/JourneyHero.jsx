@@ -1,5 +1,5 @@
 import "./JourneyHero.css";
-import heroImage from "./hero-bg.webp";
+import heroImage from "./banner.jpg";
 
 export default function JourneyHero() {
   return (

@@ -1,0 +1,260 @@
+.servicesHero {
+  position: relative;
+
+  width: 100%;
+  height: 520px;
+
+  overflow: hidden;
+
+  background: #222;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.servicesHeroImage {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+
+  transform: scale(1.01);
+}
+
+
+/* =========================================
+   DARK OVERLAY
+========================================= */
+
+.servicesHeroOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 16, 13, 0.68) 0%,
+      rgba(10, 16, 13, 0.45) 32%,
+      rgba(10, 16, 13, 0.12) 68%,
+      rgba(10, 16, 13, 0.15) 100%
+    );
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.servicesHeroContent {
+  position: relative;
+
+  z-index: 2;
+
+  height: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding-left: 11.5%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-top: 25px;
+
+  color: #f7f3ec;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.servicesHeroEyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+
+.servicesHeroEyebrow span {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.servicesHeroEyebrow i {
+  display: block;
+
+  width: 50px;
+
+  height: 1px;
+
+  background: #b36a4d;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.servicesHero h1 {
+  margin: 0;
+
+  max-width: 600px;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(52px, 5vw, 76px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+}
+
+
+.servicesHero h1 em {
+  color: #c77a59;
+
+  font-style: italic;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.servicesHeroContent p {
+  margin: 25px 0 0;
+
+  max-width: 470px;
+
+  color: rgba(247, 243, 236, 0.88);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .servicesHero {
+    height: 480px;
+  }
+
+  .servicesHeroContent {
+    padding-left: 8%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .servicesHero {
+    height: 600px;
+  }
+
+  .servicesHeroImage {
+    object-position: 63% center;
+  }
+
+  .servicesHeroOverlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 16, 13, 0.25) 0%,
+        rgba(10, 16, 13, 0.5) 45%,
+        rgba(10, 16, 13, 0.78) 100%
+      );
+  }
+
+  .servicesHeroContent {
+    justify-content: flex-end;
+
+    padding: 40px 24px 55px;
+  }
+
+  .servicesHeroEyebrow {
+    margin-bottom: 15px;
+  }
+
+  .servicesHeroEyebrow span {
+    font-size: 9px;
+  }
+
+  .servicesHeroEyebrow i {
+    width: 35px;
+  }
+
+  .servicesHero h1 {
+    font-size: 48px;
+
+    line-height: 0.98;
+
+    letter-spacing: -1px;
+  }
+
+  .servicesHeroContent p {
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    max-width: 350px;
+  }
+
+  .desktopBreak {
+    display: none;
+  }
+
+}

@@ -1,0 +1,523 @@
+.philosophyApproach {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    15% 35% 50%;
+
+  background: #f7f1e8;
+
+  color: #22211f;
+
+  border-top: 1px solid #ddd3c7;
+
+  border-bottom: 1px solid #ddd3c7;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.philosophyImage {
+  height: 100%;
+
+  min-height: 500px;
+
+  overflow: hidden;
+}
+
+.philosophyImage img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.philosophyImage:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================
+   SHARED EYEBROW
+========================================= */
+
+.sectionEyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 13px;
+
+  color: #4d4a45;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.7px;
+}
+
+.sectionEyebrow span {
+  width: 28px;
+
+  height: 1px;
+
+  background: #b56849;
+}
+
+
+/* =========================================
+   CORE PHILOSOPHY
+========================================= */
+
+.corePhilosophy {
+  padding: 30px 35px 25px;
+
+  border-right: 1px solid #d6cabe;
+}
+
+
+.corePhilosophy h2,
+.ourApproach h2 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(29px, 2.7vw, 42px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.6px;
+}
+
+
+.corePhilosophy h2 em,
+.ourApproach h2 em {
+  color: #ad6245;
+
+  font-style: italic;
+}
+
+
+.philosophyIntro {
+  max-width: 370px;
+
+  margin: 10px 0 20px;
+
+  color: #4f4c47;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 8.5px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   PHILOSOPHY GRID
+========================================= */
+
+.philosophyGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  border-top: 1px solid #ddd2c6;
+
+  border-bottom: 1px solid #ddd2c6;
+}
+
+
+.philosophyPoint {
+  min-height: 150px;
+
+  padding: 15px 9px 10px;
+
+  text-align: center;
+
+  border-right: 1px solid #ddd2c6;
+}
+
+.philosophyPoint:last-child {
+  border-right: none;
+}
+
+
+.philosophyIcon {
+  height: 31px;
+
+  margin-bottom: 7px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ad6245;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+}
+
+
+.philosophyPoint h3 {
+  margin: 0 0 7px;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 15px;
+
+  font-weight: 400;
+}
+
+
+.philosophyPoint p {
+  margin: 0;
+
+  color: #55514b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+
+.philosophyBottom {
+  max-width: 420px;
+
+  margin: 13px auto 0;
+
+  text-align: center;
+
+  color: #4f4b46;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 7px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   OUR APPROACH
+========================================= */
+
+.ourApproach {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 30px 35px 25px;
+}
+
+
+.approachContent {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+
+.approachIntro {
+  max-width: 400px;
+
+  margin: 10px 0 15px;
+
+  color: #4f4c47;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 8.5px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   APPROACH LIST
+========================================= */
+
+.approachList {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.approachItem {
+  display: grid;
+
+  grid-template-columns:
+    34px 70px 1fr;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.approachIcon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d4bba7;
+
+  border-radius: 50%;
+
+  color: #ad6245;
+
+  font-family: Georgia, serif;
+
+  font-size: 15px;
+}
+
+
+.approachTitle {
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 11px;
+
+  color: #272521;
+}
+
+
+.approachItem p {
+  margin: 0;
+
+  max-width: 350px;
+
+  color: #55514b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 7px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   DECORATIVE LEAF
+========================================= */
+
+.approachDecoration {
+  position: absolute;
+
+  right: -35px;
+
+  bottom: -75px;
+
+  width: 210px;
+
+  height: 360px;
+
+  opacity: 0.28;
+
+  color: #c4ae99;
+
+  pointer-events: none;
+}
+
+
+.approachDecoration span {
+  display: block;
+
+  font-family: Georgia, serif;
+
+  font-size: 300px;
+
+  line-height: 1;
+
+  transform:
+    rotate(-25deg);
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.philosophyPoint,
+.approachItem {
+  transition: transform 0.3s ease;
+}
+
+
+.philosophyPoint:hover {
+  transform: translateY(-3px);
+}
+
+
+.approachItem:hover {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .philosophyApproach {
+    grid-template-columns:
+      20% 40% 40%;
+  }
+
+  .corePhilosophy,
+  .ourApproach {
+    padding: 25px 20px;
+  }
+
+  .philosophyGrid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .philosophyPoint:nth-child(2) {
+    border-right: none;
+  }
+
+  .philosophyPoint:nth-child(-n + 2) {
+    border-bottom: 1px solid #ddd2c6;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .philosophyApproach {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+
+  .philosophyImage {
+    height: 300px;
+
+    min-height: 0;
+
+    order: 1;
+  }
+
+
+  .corePhilosophy {
+    order: 2;
+
+    border-right: none;
+
+    border-bottom: 1px solid #d6cabe;
+
+    padding: 35px 20px;
+  }
+
+
+  .ourApproach {
+    order: 3;
+
+    padding: 35px 20px;
+  }
+
+
+  .corePhilosophy h2,
+  .ourApproach h2 {
+    font-size: 38px;
+  }
+
+
+  .philosophyGrid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .philosophyPoint {
+    min-height: 145px;
+  }
+
+
+  .approachItem {
+    grid-template-columns:
+      38px 75px 1fr;
+
+    gap: 7px;
+  }
+
+
+  .approachItem p {
+    font-size: 8px;
+  }
+
+
+  .approachDecoration {
+    right: -80px;
+
+    opacity: 0.18;
+  }
+
+}

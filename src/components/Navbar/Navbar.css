@@ -155,3 +155,27 @@ nav a{
     }
 
 }
+
+
+
+
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    line-height: 0;
+}
+
+.logo img {
+    display: block;
+
+    width: 125px;
+    height: auto;
+
+    object-fit: contain;
+}

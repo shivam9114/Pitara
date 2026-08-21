@@ -1,0 +1,418 @@
+.itinerariesSection {
+  width: 100%;
+  padding: 85px 0 70px;
+
+  background: #f7f2e9;
+  color: #20201d;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.itinerariesHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 0 8.5vw;
+  margin-bottom: 42px;
+}
+
+
+.itinerariesEyebrow {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #a96044;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+
+.itinerariesHeader h2 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(45px, 4.5vw, 68px);
+
+  font-weight: 400;
+
+  line-height: .9;
+
+  letter-spacing: -2px;
+}
+
+
+.itinerariesHeader h2 em {
+  color: #ad6245;
+  font-style: italic;
+}
+
+
+.itinerariesHeader > p {
+  max-width: 350px;
+
+  margin: 0 0 5px;
+
+  color: #69655f;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   HORIZONTAL TRACK
+========================================= */
+
+.itinerariesTrack {
+  display: flex;
+
+  gap: 18px;
+
+  overflow-x: auto;
+
+  padding: 0 8.5vw 25px;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+}
+
+.itinerariesTrack::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.itineraryCard {
+  flex: 0 0 285px;
+
+  scroll-snap-align: start;
+
+  background: #eee7dc;
+
+  border: 1px solid #ded5c9;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.itineraryImage {
+  position: relative;
+
+  width: 100%;
+  height: 365px;
+
+  overflow: hidden;
+}
+
+
+.itineraryImage::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.12),
+      transparent 45%,
+      rgba(0,0,0,.45)
+    );
+}
+
+
+.itineraryImage img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform .8s ease;
+}
+
+
+.itineraryCard:hover .itineraryImage img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   IMAGE LABELS
+========================================= */
+
+.itineraryNumber {
+  position: absolute;
+
+  z-index: 2;
+
+  top: 17px;
+  left: 17px;
+
+  color: #fff;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 20px;
+}
+
+
+.itineraryCategory {
+  position: absolute;
+
+  z-index: 2;
+
+  bottom: 17px;
+  left: 17px;
+
+  color: #fff;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.itineraryContent {
+  padding: 21px 20px 22px;
+}
+
+
+.itineraryContent h3 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 31px;
+
+  font-weight: 400;
+
+  line-height: .95;
+}
+
+
+.itineraryContent h4 {
+  margin: 5px 0 17px;
+
+  color: #ad6245;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.itineraryMeta {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding-top: 13px;
+
+  border-top: 1px solid #d8cec2;
+
+  color: #6c6862;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.itineraryContent a {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 18px;
+
+  color: #24231f;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+
+.itineraryContent a span {
+  font-size: 15px;
+
+  transition: transform .3s ease;
+}
+
+
+.itineraryContent a:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.itinerariesFooter {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 8.5vw 0;
+
+  border-top: 1px solid #ddd4c8;
+
+  margin-top: 5px;
+}
+
+
+.itinerariesFooter > span {
+  color: #77726b;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+}
+
+
+.itinerariesFooter a {
+  color: #a96044;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+
+.itinerariesFooter a span {
+  margin-left: 10px;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .itinerariesSection {
+    padding: 60px 0 50px;
+  }
+
+  .itinerariesHeader {
+    display: block;
+
+    padding: 0 24px;
+
+    margin-bottom: 30px;
+  }
+
+  .itinerariesHeader h2 {
+    font-size: 48px;
+  }
+
+  .itinerariesHeader > p {
+    margin-top: 20px;
+
+    max-width: 320px;
+  }
+
+  .itinerariesTrack {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    gap: 14px;
+  }
+
+  .itineraryCard {
+    flex-basis: 280px;
+  }
+
+  .itineraryImage {
+    height: 350px;
+  }
+
+  .itinerariesFooter {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+}

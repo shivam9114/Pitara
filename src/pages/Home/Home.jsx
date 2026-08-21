@@ -4,6 +4,7 @@ import Principles from "../../components/Principles/Principles";
 import Stats from "../../components/Stats/Stats";
 import Retreats from "../../components/Retreats/Retreats";
 import TeacherTraining from "../../components/TeacherTraining/TeacherTraining";
+import Itineraries from "../../components/Itineraries/Itineraries";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import ContactSection from "../../components/ContactSection/ContactSection"; 
 import Footer from "../../components/Footer/Footer"; 
@@ -16,6 +17,7 @@ export default function Home() {
       <Principles />
       <Stats />
       <Retreats />
+      {/* <Itineraries /> */}
       <TeacherTraining />
       <Testimonials />
       <ContactSection />

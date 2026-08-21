@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
 
+import logo from "../../assets/img/pitara.png";
+
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState(false);
@@ -23,13 +25,16 @@ export default function Navbar() {
 
             <div className="navbar-container">
 
-                <div className="logo">
-                    Sattva <span>Yātrā</span>
-                </div>
+                <a href="/" className="logo">
+                    <img
+                        src={logo}
+                        alt="PITARA"
+                    />
+                </a>
 
                 <nav>
 
-                     <a href="/">Home</a>
+                    <a href="/">Home</a>
 
                     <a href="/about">About Us</a>
 
@@ -37,20 +42,13 @@ export default function Navbar() {
 
                     {/* <a href="/philosophy">Philosophy</a> */}
 
-               
-
-               
-
                     <a href="/contact">Contact</a>
 
                 </nav>
 
-                <a href="#" className="btnJourney">
-
+                <a href="/contact" className="btnJourney">
                     Begin Journey
-
                     <span>→</span>
-
                 </a>
 
             </div>
@@ -58,5 +56,4 @@ export default function Navbar() {
         </header>
 
     );
-
 }

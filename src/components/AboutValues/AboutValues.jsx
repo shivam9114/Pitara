@@ -11,23 +11,23 @@ import devImage from "../../assets/img/2.avif";
 const values = [
   {
     icon: "✧",
-    title: "Authenticity",
-    text: "We stay true to the roots of yoga and the essence of each place we visit.",
+    title: "Curiosity",
+    text: "We believe every journey begins with curiosity — to discover new places, cultures, people, and perspectives.",
   },
   {
     icon: "♧",
-    title: "Sustainability",
-    text: "We travel mindfully, support local communities, and protect what we love.",
+    title: "Meaningful Travel",
+    text: "We create experiences that go beyond sightseeing and connect you with the heart and soul of every destination.",
   },
   {
     icon: "♢",
-    title: "Integrity",
-    text: "We believe in honest relationships, transparency, and mindful experiences.",
+    title: "Personalisation",
+    text: "Every traveller is different. We design journeys around your interests, pace, purpose, and expectations.",
   },
   {
     icon: "♡",
-    title: "Transformation",
-    text: "We create space for inner growth, healing, and meaningful change.",
+    title: "Connection",
+    text: "We bring people, places, cultures, communities, and experiences together to create memories that truly last.",
   },
 ];
 
@@ -36,22 +36,22 @@ const teachers = [
   {
     image: meeraImage,
     name: "Meera",
-    role: "Yoga Teacher",
+    role: "Yoga & Wellness",
   },
   {
     image: arjunImage,
     name: "Arjun",
-    role: "Meditation Guide",
+    role: "Travel Experience Host",
   },
   {
     image: kavyaImage,
     name: "Kavya",
-    role: "Philosophy Teacher",
+    role: "Culture & Experiences",
   },
   {
     image: devImage,
     name: "Dev",
-    role: "Travel Host",
+    role: "Travel Coordinator",
   },
 ];
 
@@ -74,9 +74,9 @@ export default function AboutValues() {
           </span>
 
           <h2>
-            Rooted in <em>Sattva.</em>
+            Travel with <em>purpose.</em>
             <br />
-            Guided by values.
+            Experience with heart.
           </h2>
 
         </div>
@@ -123,7 +123,7 @@ export default function AboutValues() {
 
           <img
             src={founderImage}
-            alt="Sattva Yatra founder by the Ganges"
+            alt="PITARA travel experience"
           />
 
         </div>
@@ -132,7 +132,7 @@ export default function AboutValues() {
         <div className="founderContent">
 
           <span className="aboutValuesLabel">
-            A Note From Our Founders
+            A Note From PITARA
           </span>
 
           <div className="founderQuoteMark">
@@ -140,11 +140,11 @@ export default function AboutValues() {
           </div>
 
           <blockquote>
-            We started Sattva Yātrā to share the places
+            We created PITARA to bring together the joy
             <br className="desktopOnly" />
-            and practices that transformed our own lives.
+            of travel, the depth of experiences, and the
             <br className="desktopOnly" />
-            Our hope is that they transform yours too.
+            connections that make every journey meaningful.
           </blockquote>
 
 
@@ -153,12 +153,12 @@ export default function AboutValues() {
             <div className="founderPerson">
 
               <div className="founderAvatar">
-                AS
+                PI
               </div>
 
               <div>
-                <strong>Aishwarya</strong>
-                <span>Co-founder</span>
+                <strong>PITARA</strong>
+                <span>Travel & Experiences</span>
               </div>
 
             </div>
@@ -167,12 +167,12 @@ export default function AboutValues() {
             <div className="founderPerson">
 
               <div className="founderAvatar">
-                VK
+                TY
               </div>
 
               <div>
-                <strong>Vikram</strong>
-                <span>Co-founder</span>
+                <strong>PITARA</strong>
+                <span>Travel & Yoga</span>
               </div>
 
             </div>
@@ -196,20 +196,20 @@ export default function AboutValues() {
           <div>
 
             <span className="aboutValuesLabel">
-              Meet Our Guides
+              Meet Our Team
             </span>
 
             <h2>
-              Hearts that hold the space.
+              People who make journeys happen.
             </h2>
 
           </div>
 
 
           <p>
-            Our teachers and hosts are the soul of our journeys.
+            Our team brings together travel planners,
             <br />
-            They are practitioners, seekers, and lifelong students.
+            experience hosts, yoga practitioners, and coordinators.
           </p>
 
         </div>
@@ -252,6 +252,7 @@ export default function AboutValues() {
         </div>
 
       </div>
+
 
     </section>
   );

@@ -1,6 +1,6 @@
 import "./AboutHero.css";
 
-import aboutHeroImage from "../../assets/img/1.jpeg";
+import aboutHeroImage from "../../assets/img/about.jpg";
 
 export default function AboutHero() {
   return (

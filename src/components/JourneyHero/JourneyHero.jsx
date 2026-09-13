@@ -28,17 +28,14 @@ export default function JourneyHero() {
           <div className="journeyLeft">
 
             <h1>
-              The journey
-              <br />
-              inward <em>begins</em>
-              <br />
-              at altitude.
+             The journey begins
+with what you discover.
             </h1>
 
             <p>
-              Small-group yoga retreats and teacher training across the
-              Himalayas, Kerala backwaters, and the Arabian coast — hosted
-              by Sattva Yātrā since 2011.
+              Customised journeys across India and beyond, bringing together travel, yoga, 
+              wellness, culture, adventure, and meaningful experiences — thoughtfully
+               planned by PITARA.
             </p>
 
           </div>

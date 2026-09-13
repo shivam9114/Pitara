@@ -17,8 +17,8 @@
 
     display:flex;
     justify-content:space-between;
-    gap:80px;
-    margin-bottom:120px;
+    gap:40px;
+    margin-bottom:40px;
 
 }
 
@@ -42,7 +42,7 @@
 
 .leftHeading h2{
 
-    font-size:96px;
+    font-size:70px;
     line-height:.95;
     font-weight:400;
     color:#111;
@@ -68,7 +68,7 @@
 
 .rightHeading p{
 
-    font-size:30px;
+    font-size:25px;
     line-height:1.6;
     color:#444;
     font-family:sans-serif;
@@ -85,20 +85,20 @@
 
 .card .number{
 
-    font-size:110px;
+    font-size:50px;
     color:#aa593d;
     line-height:1;
-    margin-bottom:40px;
+    margin-bottom:20px;
     font-family:"Cormorant Garamond", serif;
 
 }
 
 .card h3{
 
-    font-size:52px;
+    font-size:32px;
     font-weight:400;
     line-height:1.2;
-    margin-bottom:30px;
+    margin-bottom:20px;
     color:#111;
     font-family:"Cormorant Garamond", serif;
 
@@ -106,7 +106,7 @@
 
 .card p{
 
-    font-size:23px;
+    font-size:18px;
     line-height:1.9;
     color:#555;
     font-family:sans-serif;

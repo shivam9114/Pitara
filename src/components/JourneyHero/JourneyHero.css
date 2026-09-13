@@ -61,12 +61,12 @@
 }
 
 .journeyLeft{
-    max-width:720px;
+    max-width:780px;
 }
 
 .journeyLeft h1{
     color:#fff;
-    font-size:110px;
+    font-size:90px;
     line-height:.95;
     font-weight:300;
     margin:0;
@@ -80,8 +80,8 @@
 }
 
 .journeyLeft p{
-    width:520px;
-    margin-top:60px;
+    width:600px;
+    margin-top:30px;
     color:#ededed;
     font-size:22px;
     line-height:1.8;

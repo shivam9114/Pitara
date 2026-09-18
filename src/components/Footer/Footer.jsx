@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="newsletter">
 
             <span className="footerTag">
-              II Quarterly Dispatch
+              Subscribe to our newsletter
             </span>
 
             <h2>
@@ -90,7 +90,7 @@ export default function Footer() {
 
           <div>
 
-            <small>Studio</small>
+            <small>Address</small>
 
             <p>
 
@@ -108,11 +108,11 @@ export default function Footer() {
 
             <small>
 
-              © 2011–2026 SATTVA YĀTRĀ
+              © 2026 Pitara India. All rights reserved.
 
               <br />
 
-              Yoga Alliance RYS 200 · 300 · 500
+            
 
             </small>
 
@@ -128,13 +128,13 @@ export default function Footer() {
 
         <span className="brandWhite">
 
-          Sattva
+          Pitara
 
         </span>
 
         <span className="brandOrange">
 
-          Yātrā
+          India
 
         </span>
 

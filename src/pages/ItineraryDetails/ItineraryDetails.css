@@ -1,0 +1,314 @@
+.itineraryPage {
+  background: #f5f0e8;
+  color: #171717;
+}
+
+/* HERO */
+
+.itineraryHero {
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.itineraryHeroOverlay {
+  min-height: 75vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 80px 7vw;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.05)
+    );
+}
+
+.itineraryHeroContent {
+  max-width: 900px;
+  color: #fff;
+}
+
+.itineraryLocation {
+  display: block;
+
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  margin-bottom: 22px;
+}
+
+.itineraryHero h1 {
+  font-size: clamp(48px, 7vw, 105px);
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  margin: 0 0 25px;
+}
+
+.itineraryHero p {
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+
+/* COMMON */
+
+.itineraryContainer {
+  width: min(1200px, 86%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+
+  color: #b65d3a;
+}
+
+
+/* INTRO */
+
+.itineraryIntro {
+  padding: 110px 0;
+}
+
+.introGrid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+
+  margin-top: 35px;
+}
+
+.introGrid h2 {
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.introGrid p {
+  font-size: 21px;
+  line-height: 1.65;
+
+  margin: 0;
+}
+
+
+/* HIGHLIGHTS */
+
+.itineraryHighlights {
+  padding: 80px 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.highlightGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 35px;
+}
+
+.highlightItem {
+  padding: 25px 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.highlightItem span {
+  color: #b65d3a;
+}
+
+
+/* DAYS */
+
+.itineraryDays {
+  padding: 120px 0;
+}
+
+.daysHeader {
+  margin-bottom: 70px;
+}
+
+.daysHeader h2 {
+  font-size: clamp(48px, 6vw, 85px);
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  margin: 25px 0 0;
+}
+
+.daysHeader em {
+  font-family: inherit;
+}
+
+
+.daysList {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.itineraryDay {
+  display: grid;
+
+  grid-template-columns: 180px 1fr;
+
+  gap: 60px;
+
+  padding: 50px 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dayNumber {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+
+  color: #b65d3a;
+
+  padding-top: 8px;
+}
+
+.dayDetails {
+  max-width: 850px;
+}
+
+.dayDetails h3 {
+  font-size: 32px;
+  font-weight: 400;
+
+  margin: 0 0 20px;
+}
+
+.dayDetails p {
+  font-size: 17px;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* CTA */
+
+.itineraryCTA {
+  background: #171717;
+  color: #fff;
+
+  padding: 130px 7vw;
+}
+
+.itineraryCTAInner {
+  max-width: 900px;
+}
+
+.itineraryCTA h2 {
+  font-size: clamp(48px, 7vw, 100px);
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  margin: 25px 0 45px;
+}
+
+.itineraryCTA a {
+  color: #fff;
+  text-decoration: none;
+
+  border-bottom: 1px solid #fff;
+
+  padding-bottom: 8px;
+
+  font-size: 17px;
+}
+
+
+/* NOT FOUND */
+
+.itineraryNotFound {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.itineraryNotFound a {
+  color: inherit;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .itineraryHero,
+  .itineraryHeroOverlay {
+    min-height: 65vh;
+  }
+
+  .itineraryHeroOverlay {
+    padding: 50px 7%;
+  }
+
+  .introGrid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .highlightGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .itineraryDay {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    padding: 35px 0;
+  }
+
+  .dayDetails h3 {
+    font-size: 27px;
+  }
+
+  .dayDetails p {
+    font-size: 16px;
+  }
+
+  .itineraryIntro,
+  .itineraryDays {
+    padding: 80px 0;
+  }
+
+}

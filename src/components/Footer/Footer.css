@@ -132,9 +132,11 @@
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:38px;
+    font-size:22px;
 
     transition:.35s;
+
+    text-decoration:none;
 
 }
 

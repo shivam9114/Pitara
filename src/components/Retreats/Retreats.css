@@ -149,8 +149,10 @@
 .titleRow h3{
 
     font-family:"Cormorant Garamond",serif;
-    font-size:56px;
+    font-size:26px;
     font-weight:400;
+    text-decoration:none;
+    color:#111;
 
 }
 
@@ -239,4 +241,37 @@
 
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.retreatCardLink {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.retreatCardLink:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.retreatCardLink:visited {
+  color: inherit;
+}
+
+.retreatCardLink:active {
+  color: inherit;
 }

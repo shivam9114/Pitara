@@ -1,70 +1,20 @@
-.itineraryPage {
-  background: #f5f0e8;
+/* =========================================================
+   PITARA — ITINERARY DETAILS
+========================================================= */
+
+.itineraryDetails {
+  background: #f7f4ee;
   color: #171717;
-}
-
-/* HERO */
-
-.itineraryHero {
-  min-height: 75vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.itineraryHeroOverlay {
-  min-height: 75vh;
-
-  display: flex;
-  align-items: flex-end;
-
-  padding: 80px 7vw;
-
-  background:
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.72),
-      rgba(0, 0, 0, 0.05)
-    );
-}
-
-.itineraryHeroContent {
-  max-width: 900px;
-  color: #fff;
-}
-
-.itineraryLocation {
-  display: block;
-
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-
-  margin-bottom: 22px;
-}
-
-.itineraryHero h1 {
-  font-size: clamp(48px, 7vw, 105px);
-  line-height: 0.95;
-
-  font-weight: 400;
-
-  margin: 0 0 25px;
-}
-
-.itineraryHero p {
-  font-size: 16px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-
-  margin: 0;
+  overflow: hidden;
 }
 
 
-/* COMMON */
+/* =========================================================
+   COMMON
+========================================================= */
 
 .itineraryContainer {
-  width: min(1200px, 86%);
+  width: min(1360px, 86%);
   margin: 0 auto;
 }
 
@@ -72,53 +22,144 @@
   display: inline-block;
 
   font-size: 12px;
-  letter-spacing: 0.22em;
+  line-height: 1;
+
+  letter-spacing: 0.24em;
   text-transform: uppercase;
 
   color: #b65d3a;
 }
 
 
-/* INTRO */
+/* =========================================================
+   HERO
+========================================================= */
+
+.itineraryHero {
+  min-height: 78vh;
+
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.itineraryHeroOverlay {
+  min-height: 78vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 90px 7vw;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.02) 20%,
+      rgba(0, 0, 0, 0.18) 55%,
+      rgba(0, 0, 0, 0.78) 100%
+    );
+}
+
+.itineraryHeroContent {
+  width: min(1050px, 100%);
+  color: #fff;
+}
+
+.itineraryHeroLocation {
+  display: block;
+
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  opacity: 0.9;
+}
+
+.itineraryHero h1 {
+  max-width: 1050px;
+
+  margin: 0 0 28px;
+
+  font-size: clamp(48px, 7vw, 108px);
+  line-height: 0.92;
+
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.itineraryHeroMeta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.heroMetaDot {
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
 
 .itineraryIntro {
-  padding: 110px 0;
+  padding: 125px 0 135px;
 }
 
 .introGrid {
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
 
-  gap: 100px;
+  gap: 110px;
 
-  margin-top: 35px;
+  align-items: start;
 }
 
-.introGrid h2 {
-  font-size: clamp(42px, 5vw, 72px);
-  line-height: 0.98;
+.introHeading h2 {
+  max-width: 750px;
+
+  margin: 30px 0 0;
+
+  font-size: clamp(48px, 5.5vw, 82px);
+  line-height: 0.95;
 
   font-weight: 400;
-
-  margin: 0;
+  letter-spacing: -0.045em;
 }
 
-.introGrid p {
-  font-size: 21px;
-  line-height: 1.65;
+.introDescription {
+  padding-top: 45px;
+}
+
+.introDescription p {
+  max-width: 570px;
 
   margin: 0;
+
+  font-size: 19px;
+  line-height: 1.8;
+
+  color: #3f3b37;
 }
 
 
-/* HIGHLIGHTS */
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
 
 .itineraryHighlights {
-  padding: 80px 0;
+  padding: 85px 0 100px;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(23, 23, 23, 0.14);
+  border-bottom: 1px solid rgba(23, 23, 23, 0.14);
 }
 
 .highlightGrid {
@@ -126,129 +167,373 @@
 
   grid-template-columns: repeat(3, 1fr);
 
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .highlightItem {
-  padding: 25px 0;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-
-  font-size: 18px;
+  min-height: 85px;
 
   display: flex;
   align-items: center;
-  gap: 15px;
+
+  gap: 22px;
+
+  padding: 22px 28px 22px 0;
+
+  border-bottom: 1px solid rgba(23, 23, 23, 0.14);
+
+  transition:
+    padding-left 0.35s ease,
+    color 0.35s ease;
 }
 
-.highlightItem span {
+.highlightItem:nth-child(3n + 2),
+.highlightItem:nth-child(3n + 3) {
+  padding-left: 28px;
+
+  border-left: 1px solid rgba(23, 23, 23, 0.14);
+}
+
+.highlightItem:hover {
+  padding-left: 10px;
+
   color: #b65d3a;
 }
 
-
-/* DAYS */
-
-.itineraryDays {
-  padding: 120px 0;
+.highlightItem:nth-child(3n + 2):hover,
+.highlightItem:nth-child(3n + 3):hover {
+  padding-left: 38px;
 }
 
-.daysHeader {
-  margin-bottom: 70px;
+.highlightNumber {
+  min-width: 25px;
+
+  font-size: 10px;
+  letter-spacing: 0.15em;
+
+  color: #b65d3a;
 }
 
-.daysHeader h2 {
-  font-size: clamp(48px, 6vw, 85px);
-  line-height: 0.95;
+.highlightText {
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   ITINERARY HEADER
+========================================================= */
+
+.itineraryContent {
+  padding: 145px 0 160px;
+}
+
+.itinerarySectionHeader {
+  max-width: 900px;
+
+  margin-bottom: 120px;
+}
+
+.itinerarySectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  margin-bottom: 35px;
+}
+
+.itineraryDuration {
+  padding-left: 35px;
+
+  border-left: 1px solid rgba(23, 23, 23, 0.25);
+
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: #77716a;
+}
+
+.itinerarySectionHeader h2 {
+  margin: 0;
+
+  font-size: clamp(58px, 7vw, 110px);
+  line-height: 0.88;
 
   font-weight: 400;
-
-  margin: 25px 0 0;
+  letter-spacing: -0.055em;
 }
 
-.daysHeader em {
-  font-family: inherit;
+.itinerarySectionHeader h2 em {
+  font-style: italic;
 }
 
 
-.daysList {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+/* =========================================================
+   JOURNEY TIMELINE
+========================================================= */
+
+.journeyTimeline {
+  position: relative;
+
+  width: 100%;
 }
 
-.itineraryDay {
+.journeyLine {
+  position: absolute;
+
+  left: 157px;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background: rgba(23, 23, 23, 0.17);
+}
+
+
+/* =========================================================
+   DAY
+========================================================= */
+
+.journeyDay {
+  position: relative;
+
   display: grid;
 
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 315px 1fr;
 
-  gap: 60px;
+  min-height: 270px;
 
-  padding: 50px 0;
+  padding: 0 0 95px;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
 }
 
-.dayNumber {
-  font-size: 12px;
-  letter-spacing: 0.18em;
+.journeyDay:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   DAY MARKER
+========================================================= */
+
+.journeyDayMarker {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  padding-top: 4px;
+}
+
+.journeyDayDot {
+  position: absolute;
+
+  left: 153px;
+  top: 5px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #b65d3a;
+
+  box-shadow:
+    0 0 0 7px #f7f4ee;
+}
+
+.journeyDayNumber {
+  font-size: clamp(65px, 7vw, 108px);
+
+  line-height: 0.75;
+
+  font-weight: 400;
+
+  letter-spacing: -0.06em;
+
+  color: rgba(23, 23, 23, 0.14);
+}
+
+
+/* =========================================================
+   DAY CONTENT
+========================================================= */
+
+.journeyDayContent {
+  max-width: 780px;
+
+  padding-left: 75px;
+}
+
+.journeyDayTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.journeyDayLabel {
+  font-size: 11px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #b65d3a;
+}
+
+.journeyDayIndex {
+  font-size: 10px;
+
+  letter-spacing: 0.15em;
+
+  color: #8d8780;
+}
+
+.journeyDayContent h3 {
+  margin: 0 0 24px;
+
+  font-size: clamp(30px, 3.1vw, 48px);
+
+  line-height: 1.05;
+
+  font-weight: 400;
+
+  letter-spacing: -0.035em;
+
+  transition: color 0.3s ease;
+}
+
+.journeyDayContent p {
+  max-width: 720px;
+
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #514c46;
+}
+
+.journeyDay:hover .journeyDayContent h3 {
+  color: #b65d3a;
+}
+
+.journeyDay:hover .journeyDayNumber {
+  color: rgba(182, 93, 58, 0.25);
+}
+
+
+/* =========================================================
+   END OF JOURNEY
+========================================================= */
+
+.journeyEnd {
+  padding: 0 0 145px;
+}
+
+.journeyEndInner {
+  width: min(900px, 70%);
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
 
   color: #b65d3a;
 
-  padding-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+
+  text-align: center;
 }
 
-.dayDetails {
-  max-width: 850px;
-}
+.journeyEndLine {
+  flex: 1;
 
-.dayDetails h3 {
-  font-size: 32px;
-  font-weight: 400;
+  height: 1px;
 
-  margin: 0 0 20px;
-}
-
-.dayDetails p {
-  font-size: 17px;
-  line-height: 1.7;
-
-  margin: 0;
+  background: rgba(182, 93, 58, 0.35);
 }
 
 
-/* CTA */
+/* =========================================================
+   CTA
+========================================================= */
 
 .itineraryCTA {
-  background: #171717;
-  color: #fff;
+  padding: 145px 7vw;
 
-  padding: 130px 7vw;
+  background: #171717;
+
+  color: #fff;
 }
 
 .itineraryCTAInner {
-  max-width: 900px;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.itineraryCTA .eyebrow {
+  color: #d9825d;
 }
 
 .itineraryCTA h2 {
-  font-size: clamp(48px, 7vw, 100px);
-  line-height: 0.95;
+  margin: 30px 0 55px;
+
+  font-size: clamp(55px, 7vw, 105px);
+
+  line-height: 0.88;
 
   font-weight: 400;
 
-  margin: 25px 0 45px;
+  letter-spacing: -0.055em;
+}
+
+.itineraryCTA h2 em {
+  font-style: italic;
 }
 
 .itineraryCTA a {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+
+  padding-bottom: 12px;
+
   color: #fff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
   text-decoration: none;
 
-  border-bottom: 1px solid #fff;
+  font-size: 16px;
 
-  padding-bottom: 8px;
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
 
-  font-size: 17px;
+.itineraryCTA a span {
+  font-size: 22px;
+}
+
+.itineraryCTA a:hover {
+  gap: 32px;
+  color: #d9825d;
 }
 
 
-/* NOT FOUND */
+/* =========================================================
+   NOT FOUND
+========================================================= */
 
 .itineraryNotFound {
   min-height: 70vh;
@@ -262,53 +547,323 @@
   gap: 30px;
 }
 
+.itineraryNotFound h1 {
+  font-weight: 400;
+}
+
 .itineraryNotFound a {
   color: inherit;
 }
 
 
-/* MOBILE */
+/* =========================================================
+   TABLET
+========================================================= */
 
-@media (max-width: 768px) {
-
-  .itineraryHero,
-  .itineraryHeroOverlay {
-    min-height: 65vh;
-  }
-
-  .itineraryHeroOverlay {
-    padding: 50px 7%;
-  }
+@media (max-width: 1000px) {
 
   .introGrid {
     grid-template-columns: 1fr;
 
+    gap: 40px;
+  }
+
+  .introDescription {
+    padding-top: 0;
+  }
+
+  .highlightGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlightItem:nth-child(3n + 2),
+  .highlightItem:nth-child(3n + 3) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .highlightItem:nth-child(even) {
+    padding-left: 28px;
+
+    border-left: 1px solid rgba(23, 23, 23, 0.14);
+  }
+
+  .journeyDay {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .journeyLine {
+    left: 110px;
+  }
+
+  .journeyDayDot {
+    left: 106px;
+  }
+
+  .journeyDayContent {
+    padding-left: 55px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .itineraryContainer {
+    width: 88%;
+  }
+
+
+  /* HERO */
+
+  .itineraryHero,
+  .itineraryHeroOverlay {
+    min-height: 68vh;
+  }
+
+  .itineraryHeroOverlay {
+    padding: 55px 6%;
+  }
+
+  .itineraryHero h1 {
+    font-size: clamp(46px, 14vw, 75px);
+
+    line-height: 0.94;
+
+    letter-spacing: -0.045em;
+  }
+
+  .itineraryHeroLocation {
+    font-size: 10px;
+
+    letter-spacing: 0.18em;
+
+    margin-bottom: 18px;
+  }
+
+  .itineraryHeroMeta {
+    font-size: 10px;
+
+    letter-spacing: 0.13em;
+  }
+
+
+  /* INTRO */
+
+  .itineraryIntro {
+    padding: 80px 0 90px;
+  }
+
+  .introGrid {
     gap: 35px;
+  }
+
+  .introHeading h2 {
+    margin-top: 22px;
+
+    font-size: clamp(43px, 12vw, 65px);
+  }
+
+  .introDescription p {
+    font-size: 16px;
+
+    line-height: 1.75;
+  }
+
+
+  /* HIGHLIGHTS */
+
+  .itineraryHighlights {
+    padding: 65px 0 70px;
   }
 
   .highlightGrid {
     grid-template-columns: 1fr;
+
+    margin-top: 30px;
   }
 
-  .itineraryDay {
-    grid-template-columns: 1fr;
+  .highlightItem,
+  .highlightItem:nth-child(even) {
+    min-height: 65px;
 
-    gap: 15px;
+    padding: 18px 0;
 
-    padding: 35px 0;
-  }
+    border-left: none;
 
-  .dayDetails h3 {
-    font-size: 27px;
-  }
-
-  .dayDetails p {
     font-size: 16px;
   }
 
-  .itineraryIntro,
-  .itineraryDays {
-    padding: 80px 0;
+  .highlightItem:hover,
+  .highlightItem:nth-child(3n + 2):hover,
+  .highlightItem:nth-child(3n + 3):hover {
+    padding-left: 6px;
   }
 
+
+  /* ITINERARY HEADER */
+
+  .itineraryContent {
+    padding: 90px 0 100px;
+  }
+
+  .itinerarySectionHeader {
+    margin-bottom: 80px;
+  }
+
+  .itinerarySectionLabel {
+    gap: 20px;
+
+    margin-bottom: 28px;
+  }
+
+  .itineraryDuration {
+    padding-left: 20px;
+
+    font-size: 9px;
+  }
+
+  .itinerarySectionHeader h2 {
+    font-size: clamp(52px, 15vw, 78px);
+
+    line-height: 0.9;
+  }
+
+
+  /* TIMELINE */
+
+  .journeyLine {
+    left: 7px;
+
+    top: 3px;
+  }
+
+  .journeyDay {
+    display: block;
+
+    min-height: auto;
+
+    padding: 0 0 70px;
+
+    margin-bottom: 5px;
+  }
+
+  .journeyDayMarker {
+    min-height: 55px;
+
+    padding: 0 0 0 35px;
+  }
+
+  .journeyDayDot {
+    left: 3px;
+    top: 4px;
+
+    width: 9px;
+    height: 9px;
+
+    box-shadow:
+      0 0 0 6px #f7f4ee;
+  }
+
+  .journeyDayNumber {
+    font-size: 46px;
+
+    line-height: 0.8;
+  }
+
+  .journeyDayContent {
+    padding-left: 35px;
+  }
+
+  .journeyDayTop {
+    margin: 22px 0 18px;
+  }
+
+  .journeyDayLabel {
+    font-size: 9px;
+  }
+
+  .journeyDayIndex {
+    font-size: 9px;
+  }
+
+  .journeyDayContent h3 {
+    margin-bottom: 18px;
+
+    font-size: 30px;
+
+    line-height: 1.05;
+  }
+
+  .journeyDayContent p {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  /* END */
+
+  .journeyEnd {
+    padding: 0 0 90px;
+  }
+
+  .journeyEndInner {
+    width: 88%;
+
+    gap: 15px;
+
+    font-size: 8px;
+
+    letter-spacing: 0.15em;
+  }
+
+
+  /* CTA */
+
+  .itineraryCTA {
+    padding: 90px 7%;
+  }
+
+  .itineraryCTA h2 {
+    margin: 25px 0 40px;
+
+    font-size: clamp(52px, 14vw, 75px);
+  }
+
+  .itineraryCTA a {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .itineraryHero,
+  .itineraryHeroOverlay {
+    min-height: 62vh;
+  }
+
+  .itineraryHero h1 {
+    font-size: 45px;
+  }
+
+  .itinerarySectionHeader h2 {
+    font-size: 50px;
+  }
+
+  .journeyDayContent h3 {
+    font-size: 27px;
+  }
+
+  .journeyDayContent p {
+    font-size: 14px;
+  }
 }

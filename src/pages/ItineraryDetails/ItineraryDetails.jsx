@@ -1,11 +1,8 @@
 import { useParams, Link } from "react-router-dom";
-
 import itineraries from "../../data/itineraries";
-
 import "./ItineraryDetails.css";
 
 export default function ItineraryDetails() {
-
   const { slug } = useParams();
 
   const itinerary = itineraries.find(
@@ -27,7 +24,9 @@ export default function ItineraryDetails() {
   return (
     <main className="itineraryDetails">
 
-      {/* HERO */}
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
       <section
         className="itineraryHero"
@@ -35,12 +34,11 @@ export default function ItineraryDetails() {
           backgroundImage: `url(${itinerary.image})`,
         }}
       >
-
         <div className="itineraryHeroOverlay">
 
           <div className="itineraryHeroContent">
 
-            <span>
+            <span className="itineraryHeroLocation">
               {itinerary.location}
             </span>
 
@@ -48,45 +46,58 @@ export default function ItineraryDetails() {
               {itinerary.title}
             </h1>
 
-            <p>
-              {itinerary.duration}
-            </p>
+            <div className="itineraryHeroMeta">
+              <span>{itinerary.duration}</span>
+              <span className="heroMetaDot">•</span>
+              <span>{itinerary.days.length} Days</span>
+            </div>
 
           </div>
 
         </div>
-
       </section>
 
 
-      {/* INTRO */}
+      {/* =====================================================
+          INTRO
+      ===================================================== */}
 
       <section className="itineraryIntro">
 
-        <div className="itineraryIntroInner">
+        <div className="itineraryContainer">
 
-          <div>
+          <div className="introGrid">
 
-            <span className="eyebrow">
-              THE JOURNEY
-            </span>
+            <div className="introHeading">
 
-            <h2>
-              {itinerary.title}
-            </h2>
+              <span className="eyebrow">
+                THE JOURNEY
+              </span>
+
+              <h2>
+                {itinerary.title}
+              </h2>
+
+            </div>
+
+            <div className="introDescription">
+
+              <p>
+                {itinerary.description}
+              </p>
+
+            </div>
 
           </div>
-
-          <p>
-            {itinerary.shortDescription}
-          </p>
 
         </div>
 
       </section>
 
 
-      {/* HIGHLIGHTS */}
+      {/* =====================================================
+          HIGHLIGHTS
+      ===================================================== */}
 
       <section className="itineraryHighlights">
 
@@ -98,14 +109,115 @@ export default function ItineraryDetails() {
 
           <div className="highlightGrid">
 
-            {itinerary.highlights.map((highlight) => (
-
+            {itinerary.highlights.map((highlight, index) => (
               <div
                 className="highlightItem"
                 key={highlight}
               >
-                {highlight}
+
+                <span className="highlightNumber">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <span className="highlightText">
+                  {highlight}
+                </span>
+
               </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          ITINERARY
+      ===================================================== */}
+
+      <section className="itineraryContent">
+
+        <div className="itineraryContainer">
+
+          <div className="itinerarySectionHeader">
+
+            <div className="itinerarySectionLabel">
+
+              <span className="eyebrow">
+                ITINERARY
+              </span>
+
+              <span className="itineraryDuration">
+                {itinerary.duration}
+              </span>
+
+            </div>
+
+            <h2>
+              Your journey,
+              <br />
+              <em>day by day.</em>
+            </h2>
+
+          </div>
+
+
+          {/* JOURNEY TIMELINE */}
+
+          <div className="journeyTimeline">
+
+            <div className="journeyLine" />
+
+            {itinerary.days.map((day, index) => (
+
+              <article
+                className="journeyDay"
+                key={day.day}
+              >
+
+                {/* DAY NUMBER */}
+
+                <div className="journeyDayMarker">
+
+                  <span className="journeyDayDot" />
+
+                  <span className="journeyDayNumber">
+                    {day.day}
+                  </span>
+
+                </div>
+
+
+                {/* CONTENT */}
+
+                <div className="journeyDayContent">
+
+                  <div className="journeyDayTop">
+
+                    <span className="journeyDayLabel">
+                      DAY {day.day}
+                    </span>
+
+                    <span className="journeyDayIndex">
+                      {String(index + 1).padStart(2, "0")} /{" "}
+                      {String(itinerary.days.length).padStart(2, "0")}
+                    </span>
+
+                  </div>
+
+                  <h3>
+                    {day.title}
+                  </h3>
+
+                  <p>
+                    {day.description}
+                  </p>
+
+                </div>
+
+              </article>
 
             ))}
 
@@ -116,43 +228,48 @@ export default function ItineraryDetails() {
       </section>
 
 
-      {/* FULL CONTENT */}
+      {/* =====================================================
+          END OF JOURNEY
+      ===================================================== */}
 
-      <section className="itineraryContent">
+      <section className="journeyEnd">
 
-        <div className="itineraryContainer">
+        <div className="journeyEndInner">
 
-          <span className="eyebrow">
-            ITINERARY
+          <span className="journeyEndLine" />
+
+          <span>
+            END OF JOURNEY
           </span>
 
-          <h2>
-            Your journey, day by day.
-          </h2>
-
-          {/* FULL ITINERARY WILL GO HERE */}
+          <span className="journeyEndLine" />
 
         </div>
 
       </section>
 
 
-      {/* CTA */}
+      {/* =====================================================
+          CTA
+      ===================================================== */}
 
       <section className="itineraryCTA">
 
-        <div>
+        <div className="itineraryCTAInner">
 
-          <span>
+          <span className="eyebrow">
             READY TO EXPLORE INDIA?
           </span>
 
           <h2>
-            Begin your journey with Pitara.
+            Begin your journey
+            <br />
+            <em>with Pitara.</em>
           </h2>
 
           <Link to="/contact">
-            Enquire Now →
+            Enquire Now
+            <span>→</span>
           </Link>
 
         </div>
